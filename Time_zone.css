@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height:100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* start of nav */
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #f8f9fa;
+    box-shadow: 0px 10px 25px 0px #888888;
+
+    z-index:3;
+    padding: 20px 15px;
+}
+
+.nav-link{
+    font-size:16px;
+    color: #050505;
+    transition: all 0.6s ease;
+    font-weight:400;
+
+}
+.nav-link:hover,.dropdown-item:hover{
+    background-color:#f76b79;
+    color: #050505;
+    font-size: 18px;
+}
+/* end of nav*/
+
+/*start of header*/
+header {
+    background-color: rgb(240,240,242);
+    width:100%;
+    height:auto;
+}
+header .container{
+    margin-top:10px;
+}
+
+
+header h2{
+    color:#0b1c39;
+    font-size: 5.5vw;
+    font-weight: 900;
+
+}
+header p{
+    font-size:24px;
+    color: 212025;
+}
+header a{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width:157px;
+    height:52px;
+    font-size: 20px;
+    padding:15px 29px;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    border:none;
+    background: linear-gradient(to left ,#4a4a4b,#4a4a4b) no-repeat;
+    background-size:0%;
+    transition: all 0.6s;
+    border:none;
+    background-color: red;
+}
+
+header a:hover{
+    color:white;
+    background-size: 100%;
+}
+/* media screen for header selectors*/ 
+@media screen and (min-width:1200px){
+    .header-img{
+        width:350px;
+        height:900px;
+
+    }
+}
+
+@media screen and (max-width:1199px){
+    .header-img{
+        width:176px;
+        height: 700px;
+    }
+}
+@media screen and (max-width:575px){
+    .header-img{
+        display: none;
+    }
+    header{
+        height:455px;
+    }
+    .sec1body{
+        margin-top:100px;
+    }
+ 
+    header h2{
+        font-size:40px;
+    }
+
+}
+
+/*End of header*/
+/*start of new products section*/
+.new-products{
+    margin-top:50px;
+}
+.new-products h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 37px;
+    font-weight: 900;
+    color:#0b1c39;
+
+}
+.new-products .figure{
+    overflow: hidden;
+    width:100%;
+}
+
+.new-products .figure-img{
+    width:100%;
+    transition: transform 0.5s ease;
+}
+
+.new-products .figure-img:hover{
+    transform: scale(1.1);
+}
+.new-products .figcaption{
+    margin-top: 1px;
+    text-align:center;
+    font-size:18px;
+    font-weight: 700;
+    color:#0b1c39;
+}
+.new-products del{
+    color:red;
+    display: block;
+    
+}
+.new-products span{
+    display:block;
+    font-weight: 800;
+}
+
+.new-products i{
+    display:block;
+    color:red;
+}
+/*end of new products section*/
+
+/*start of callery*/
+
+.callery img{
+    width:100%;
+
+}
+
+/*end of new callery*/
+
+/*start of popular*/
+.popular-items .title{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.popular-items .title h2{
+    font-size: 38px;
+    color: #0b1c39;
+    font-weight: 800;
+}
+
+.popular-items .figure{
+    overflow: hidden;
+    width:100%;
+    position: relative;
+
+}
+
+.popular-items .figure-img{
+    width:100%;
+    border-bottom: 4px solid red;
+    border-radius: 1px;
+    transition: all 0.5s step-end;
+    
+    
+}
+
+.add-to-cart a{
+    position: absolute;
+    color:white;
+    font-weight: 600;
+    left:0;
+    right:0;
+    bottom:13px; 
+    width:100%;
+    margin:auto;
+    background-color:red;
+    text-align: center;
+    font-size:16px;
+    padding:15px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.figure-img:hover + .add-to-cart a{opacity:1;}
+.add-to-cart a:hover{
+    opacity:1;
+}
+.favoruit .far{
+    position: absolute;
+    right:5%;
+    top:10px;
+    font-size: 30px;
+    color:#0b1c39;
+    cursor: pointer;
+
+}
+
+.favoruit   .fa{
+    position: absolute;
+    right:0;
+    top:0;
+    font-size: 30px;
+    color: #0b1c39;
+    opacity: 0;
+}
+.far:hover>.fa{opacity: 1;}
+
+
+.popular-items .title p{
+    font-family: impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color:red;
+    font-weight: 500;
+}
+.popular-items .figcaption{
+    margin-top: 1px;
+    text-align:center;
+    font-size:18px;
+    font-weight: 700;
+    color:#0b1c39;
+}
+.popular-items del{
+    color:red;
+    display: block;
+    
+}
+.popular-items span{
+    display:block;
+    font-weight: 800;
+}
+
+
+/*end of popular*/
+
+/*start of watch choice*/
+.watch-choice .container{
+    margin-top:140px;
+}
+
+
+.watch-choice h2{
+    color:#0b1c39;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+.watch-choice p{
+    font-size:17px;
+    color: black;
+}
+.watch-choice a{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width:157px;
+    height:52px;
+    font-size: 20px;
+    padding:15px 29px;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    border:none;
+    background: linear-gradient(to left ,#4a4a4b,#4a4a4b) no-repeat;
+    background-size:0%;
+    transition: all 0.6s;
+    border:none;
+    background-color: red;
+}
+
+.watch-choice a:hover{
+    color:white;
+    background-size: 100%;
+}
+.watch{
+    width:100%;
+}
+@media screen and (max-width:792px) {
+    .watch-choice a{
+        margin-left:135px;
+    }
+    
+    
+}
+.watch-choice .part33{
+    margin-top:80px;
+}
+.watch-choice .part3{
+    background-color:red ;
+    border-radius: 10px;
+    padding: 20px;
+}
+.watch-choice i{
+font-size:45px;
+color:white;
+text-align: center;
+}
+.watch-choice .head{
+    margin-top:18px;
+    font-weight: 600;
+    font-size: 20px;
+    color:white;
+}
+.watch-choice .par{
+    font-size:16px;
+    color:#0b1c39;
+    font-weight: 400;
+}
+/*end of watch choic*/
+/*start of footer*/
+footer{
+    margin-top:200px;
+    background-color: #ffff;
+}
+footer p{
+    font-size: 17px;
+    color:black;
+}
+footer h2{
+    color:red;
+    font-size: 25px;
+    font-weight: 600;
+}
+footer .footer-links a{
+    color:#888888;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+
+}
+footer .footer-links a:hover{
+    color:#0b1c39;
+    transform:scaleX(1.5);
+    font-size: 22px;
+}
+footer .social-links i{
+    color:#0b1c39;
+    font-size: 25px;
+    transition: all 0.5s ease;
+    cursor:pointer;
+}
+footer .social-links i:hover{
+    transform:rotateY(180deg);
+    color:red;
+}
+
+/*End of footer*/
